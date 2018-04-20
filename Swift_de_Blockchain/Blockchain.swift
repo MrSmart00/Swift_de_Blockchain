@@ -82,7 +82,7 @@ class Blockchain {
         let hash = Data(count: lastProof).sha256()
         let digest: String = hash.map { String(format: "%.2hhx", $0) }.joined()
         print(digest)
-        let lastDigestNumber: String = String(digest.suffix(4))
+        let lastDigestNumber: String = String(digest.prefix(4))
         print(lastDigestNumber)
         return lastDigestNumber == "0000"
     }
