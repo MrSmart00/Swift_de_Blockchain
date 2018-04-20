@@ -14,7 +14,6 @@ extension Data {
         self.withUnsafeBytes {
             _ = CC_SHA256($0, CC_LONG(self.count), &hash)
         }
-        print(hash)
         return Data(bytes: hash)
     }
 }
@@ -25,12 +24,26 @@ struct Block: Codable {
     let transactions: [Transaction]!
     let proof: Int
     let previousHash: Data!
+    
+    var description: String {
+        get {
+            let json = try! JSONEncoder().encode(self)
+            return String(data: json, encoding: .utf8)!
+        }
+    }
 }
 
 struct Transaction: Codable {
     let sender: String!
     let recipient: String!
     let amount: Int
+    
+    var description: String {
+        get {
+            let json = try! JSONEncoder().encode(self)
+            return String(data: json, encoding: .utf8)!
+        }
+    }
 }
 
 class Blockchain {
@@ -42,7 +55,7 @@ class Blockchain {
         _ = createBlock(proof: 0, previousHash: "0".data(using: .utf8))
     }
     
-    func createBlock(proof: Int, previousHash: Data?) -> Block {
+    func createBlock(proof: Int, previousHash: Data? = nil) -> Block {
         let pHash: Data
         if let prevHash = previousHash {
             pHash = prevHash
@@ -78,12 +91,21 @@ class Blockchain {
         return last
     }
     
-    func proofOfWork(lastProof: Int) -> Bool {
-        let hash = Data(count: lastProof).sha256()
-        let digest: String = hash.map { String(format: "%.2hhx", $0) }.joined()
-        print(digest)
-        let lastDigestNumber: String = String(digest.prefix(4))
-        print(lastDigestNumber)
-        return lastDigestNumber == "0000"
+    func proofOfWork() -> Int {
+        var nance: Int = 0
+        var lastProof: Int = lastBlock().proof
+        while validProof(proof: lastProof, nance: nance) == false {
+            lastProof = lastBlock().proof
+            nance += 1
+        }
+        return nance
+    }
+    
+    fileprivate func validProof(proof: Int, nance: Int) -> Bool {
+        if let hash = String(format: "%d*%d", proof, nance).data(using: .utf8)?.sha256() {
+            let hexdigest: String = hash.map { String(format: "%.2hhx", $0) }.joined()
+            return String(hexdigest.prefix(4)) == "0000"
+        }
+        return false
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52544522089906D00F22848 /* BlockchainServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52544512089906D00F22848 /* BlockchainServer.swift */; };
 		C55EF5242088B2B800266E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5232088B2B800266E67 /* AppDelegate.swift */; };
 		C55EF5262088B2B800266E67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5252088B2B800266E67 /* ViewController.swift */; };
 		C55EF5292088B2B800266E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55EF5272088B2B800266E67 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C52544512089906D00F22848 /* BlockchainServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockchainServer.swift; sourceTree = "<group>"; };
 		C55EF5202088B2B800266E67 /* Swift_de_Blockchain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_de_Blockchain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55EF5232088B2B800266E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55EF5252088B2B800266E67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				C55EF52C2088B2B800266E67 /* LaunchScreen.storyboard */,
 				C55EF52F2088B2B800266E67 /* Info.plist */,
 				C55EF5472088B31800266E67 /* Swift_de_Blockchain-Bridging-Header.h */,
+				C52544512089906D00F22848 /* BlockchainServer.swift */,
 			);
 			path = Swift_de_Blockchain;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				C55EF5262088B2B800266E67 /* ViewController.swift in Sources */,
 				C55EF5242088B2B800266E67 /* AppDelegate.swift in Sources */,
+				C52544522089906D00F22848 /* BlockchainServer.swift in Sources */,
 				C55EF5442088B2D700266E67 /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
