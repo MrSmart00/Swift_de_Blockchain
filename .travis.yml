@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode9.3
-xcode_workspace: Swift_de_Blockchain.xcodeproj
+xcode_project: Swift_de_Blockchain.xcodeproj
 xcode_scheme: Swift_de_BlockchainTests
 xcode_sdk: iphonesimulator
