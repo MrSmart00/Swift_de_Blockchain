@@ -16,6 +16,9 @@
 		C55EF5392088B2B800266E67 /* Swift_de_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5382088B2B800266E67 /* Swift_de_BlockchainTests.swift */; };
 		C55EF5442088B2D700266E67 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5432088B2D700266E67 /* Blockchain.swift */; };
 		C5AA46B920AA86F50006A7BE /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C5AA46B820AA86F50006A7BE /* .travis.yml */; };
+		C5AA46BA20AA9D840006A7BE /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5432088B2D700266E67 /* Blockchain.swift */; };
+		C5AA46BB20AA9D870006A7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5232088B2B800266E67 /* AppDelegate.swift */; };
+		C5AA46BC20AA9D890006A7BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5252088B2B800266E67 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,7 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AA46BB20AA9D870006A7BE /* AppDelegate.swift in Sources */,
 				C55EF5392088B2B800266E67 /* Swift_de_BlockchainTests.swift in Sources */,
+				C5AA46BC20AA9D890006A7BE /* ViewController.swift in Sources */,
+				C5AA46BA20AA9D840006A7BE /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +416,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.hiroya.hinomori.Swift-de-BlockchainTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_de_Blockchain/Swift_de_Blockchain-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_de_Blockchain.app/Swift_de_Blockchain";
@@ -427,6 +434,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.hiroya.hinomori.Swift-de-BlockchainTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift_de_Blockchain/Swift_de_Blockchain-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift_de_Blockchain.app/Swift_de_Blockchain";
