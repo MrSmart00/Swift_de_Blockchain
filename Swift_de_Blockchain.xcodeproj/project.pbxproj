@@ -15,6 +15,7 @@
 		C55EF52E2088B2B800266E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55EF52C2088B2B800266E67 /* LaunchScreen.storyboard */; };
 		C55EF5392088B2B800266E67 /* Swift_de_BlockchainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5382088B2B800266E67 /* Swift_de_BlockchainTests.swift */; };
 		C55EF5442088B2D700266E67 /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55EF5432088B2D700266E67 /* Blockchain.swift */; };
+		C5AA46B920AA86F50006A7BE /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = C5AA46B820AA86F50006A7BE /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		C55EF53A2088B2B800266E67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C55EF5432088B2D700266E67 /* Blockchain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 		C55EF5472088B31800266E67 /* Swift_de_Blockchain-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_de_Blockchain-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5AA46B820AA86F50006A7BE /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C55EF5172088B2B800266E67 = {
 			isa = PBXGroup;
 			children = (
+				C5AA46B820AA86F50006A7BE /* .travis.yml */,
 				C55EF5222088B2B800266E67 /* Swift_de_Blockchain */,
 				C55EF5372088B2B800266E67 /* Swift_de_BlockchainTests */,
 				C55EF5212088B2B800266E67 /* Products */,
@@ -190,6 +193,7 @@
 			files = (
 				C55EF52E2088B2B800266E67 /* LaunchScreen.storyboard in Resources */,
 				C55EF52B2088B2B800266E67 /* Assets.xcassets in Resources */,
+				C5AA46B920AA86F50006A7BE /* .travis.yml in Resources */,
 				C55EF5292088B2B800266E67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
