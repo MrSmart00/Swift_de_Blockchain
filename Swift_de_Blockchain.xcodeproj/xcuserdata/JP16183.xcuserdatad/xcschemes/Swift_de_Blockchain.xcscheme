@@ -29,6 +29,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C55EF5332088B2B800266E67"
+               BuildableName = "Swift_de_BlockchainTests.xctest"
+               BlueprintName = "Swift_de_BlockchainTests"
+               ReferencedContainer = "container:Swift_de_Blockchain.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
